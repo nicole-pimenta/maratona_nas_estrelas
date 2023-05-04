@@ -26,6 +26,14 @@
   justify-content: space-around;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  gap: 15px;
+}
 /*HEADER*/
 header {
   background-image: url("../assets/header-bg.png");
@@ -69,10 +77,18 @@ nav {
 }
 
 .cardList {
-  height: 700px;
-  padding: 20px;
+  height: 600px;
+  overflow: auto;
+  width: 60vw;
+  margin: 50px auto;
+  gap: 20px;
 }
 
+.cardList::-webkit-scrollbar {
+  background-color: var(--color-grey-3);
+  border-radius: 20px;
+  border: 3px solid var(--color-grey-2);
+}
 .listItem {
   height: 220px;
   width: 360px;
@@ -111,11 +127,14 @@ nav {
   text-align: left;
 }
 
-/* .listItem {
-  height: 46px;
-  width: 360px;
-  background-color: var(--color-primary);
-} */
+footer {
+  height: 186px;
+  background-image: url("../assets/footer-bg.png");
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
 
 /* MOBILE */
 
@@ -126,5 +145,11 @@ nav {
 
   ul {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardList {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
