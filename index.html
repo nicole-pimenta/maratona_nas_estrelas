@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,22 +16,18 @@
   </head>
   <body>
     <header>
-      <div class="container flex-column header-gap">
-        <div>
-          <img src="./assets/header-logo.png" />
-        </div>
-        <div>
-          <img src="./assets/header-description.png" />
-        </div>
+      <div class="container header-position">
+        <img src="./assets/header-logo.png" />
+        <img src="./assets/header-description.png" />
       </div>
     </header>
     <main>
       <div class="container">
-        <h2>Galeria Estelar</h2>
+        <h1>Galeria Estelar</h1>
 
         <!-- NAV BAR-->
         <nav>
-          <ul class="flex navBar">
+          <ul class="navBar">
             <li>PERSONAGENS</li>
             <li>PLANETAS</li>
             <li>NAVES</li>
@@ -41,13 +37,13 @@
         </nav>
 
         <!-- CARDS LIST -->
-        <ul id="cardList" class="flex-wrap">
+        <ul id="cardList">
           <!-- LIST ITEM  -->
-          <li class="flip" id="card">
+          <li id="card" class="flip">
             <!-- FRONT CARD  -->
-            <div class="face" id="front">
+            <div id="front" class="face">
               <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
+              <ul class="cardData">
                 <li>Ano de Nascimento</li>
                 <li>Planeta</li>
                 <li>Naves</li>
@@ -56,7 +52,7 @@
             </div>
 
             <!-- BACK CARD  -->
-            <div class="face" id="back">
+            <div id="back" class="face">
               <div class="titleCard">ANAKIN SKYWALKER</div>
               <img src="./assets/starduck.png" alt="starduck" />
             </div>
@@ -181,7 +177,7 @@
       </div>
     </main>
     <footer>
-      <div class="container flex-row">
+      <div class="container footer-position">
         <img src="./assets/footer-logo.png" alt="" />
         <img src="./assets/Linkedin icon.png" alt="" />
         <img src="./assets/Instagram icon.png" alt="" />

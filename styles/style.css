@@ -1,74 +1,52 @@
 /* CONFIGURAÇÕES GERAIS */
-
 .container {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/*HEADER*/
+header {
+  height: 519px;
+  background-image: url("../assets/header-bg.png");
 }
 
-.flex-column {
+.header-position {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
-  justify-content: center;
-  gap: 15px;
-}
-/*HEADER*/
-header {
-  background-image: url("../assets/header-bg.png");
-  height: 519px;
-}
-
-.header-gap {
-  gap: 90px;
+  gap: 80px;
 }
 
 /*MAIN*/
-
-h2 {
-  height: 38px;
+h1 {
   font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 37.5px;
   text-align: center;
-  margin: 0 auto;
-  margin: 80px 0 80px 0;
+  color: var(--color-title-1);
+  margin: 60px 0 60px 0;
 }
 
 /*NAV BAR*/
 nav {
   margin: 0 auto;
-  width: 50vw;
+  width: 40vw;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navBar > li {
   font-family: Poppins;
+  color: var(--color-grey-3);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  text-align: left;
-  padding: 5px;
   border: 6px solid transparent;
 }
 
@@ -80,38 +58,38 @@ nav {
 /*CARD LIST*/
 #cardList {
   height: 600px;
-  overflow: auto;
   width: 60vw;
-  margin: 50px auto;
+  margin: 60px auto;
+  overflow: auto;
   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #cardList::-webkit-scrollbar {
-  background-color: var(--color-grey-3);
   border-radius: 20px;
+  background-color: var(--color-grey-3);
   border: 3px solid var(--color-grey-2);
 }
 
 /* CARD*/
-
 #card {
-  display: flex;
-  justify-content: center;
-  transform-style: preserve-3d;
   height: 220px;
   width: 360px;
   border-radius: 5px;
+  transform-style: preserve-3d;
+  border: 4px solid transparent;
 }
 
 .flip {
   transform: rotateY(180deg);
-  background-color: #f0d800;
 }
 
 .face {
   height: 100%;
   width: 100%;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,8 +99,8 @@ nav {
 .titleCard {
   background-color: var(--color-primary);
   height: 46px;
-  width: 360px;
-  font-family: Roboto;
+  width: 100%;
+  border-radius: 5px;
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
@@ -130,35 +108,12 @@ nav {
   padding: 10px;
 }
 
-#front {
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  background-image: url("../assets/card-bg.png");
-}
-
-#front > p {
-  height: 23px;
-  width: 192px;
-
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-#back {
-  backface-visibility: hidden;
-  background-image: url("../assets/card-bg.png");
-  display: flex;
-  flex-direction: column;
-}
-
 .cardData {
-  height: 100%;
+  height: 174px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardData > li {
@@ -167,7 +122,26 @@ nav {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+  text-align: left;
+}
 
+#front,
+#back {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/card-bg.png");
+  backface-visibility: hidden;
+}
+
+#front {
+  transform: rotateY(180deg);
+}
+
+#front > p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
   text-align: left;
 }
 
@@ -175,13 +149,22 @@ footer {
   height: 186px;
   background-image: url("../assets/footer-bg.png");
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: auto;
 }
 
-/* MOBILE */
+/* FOOTER */
+.footer-position {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  gap: 25px;
+}
 
+/* MOBILE */
 @media (max-width: 600px) {
   h2 {
     margin: 30px 0 30px 0;
