@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./assets/estrela.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -17,8 +18,14 @@
   <body>
     <header>
       <div class="container header-position">
-        <img src="./assets/header-logo.png" />
-        <img src="./assets/header-description.png" />
+        <a href="https://kenzie.com.br/" target="_blank">
+          <img src="./assets/header-logo.png" alt="logotipo_kenzie" />
+        </a>
+
+        <img
+          src="./assets/header-description.png"
+          alt="logotipo_maratona nas estrelas"
+        />
       </div>
     </header>
     <main>
@@ -39,136 +46,18 @@
         <!-- CARDS LIST -->
         <ul id="cardList">
           <!-- LIST ITEM  -->
-          <li id="card" class="flip">
+          <li class="card flip">
             <!-- FRONT CARD  -->
-            <div id="front" class="face">
+            <div class="face front">
               <div class="titleCard">ANAKIN SKYWALKER</div>
               <ul class="cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
+                <li>Ano de Nascimento: 19BBY</li>
+                <li>Planeta : TATOOINE</li>
               </ul>
             </div>
 
             <!-- BACK CARD  -->
-            <div id="back" class="face">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <!-- DEMAIS LIS CRIADAS POR DOM -->
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <img src="./assets/starduck.png" alt="starduck" />
-            </div>
-          </li>
-
-          <li class="flip" id="card">
-            <!-- FRONT CARD  -->
-            <div class="face" id="front">
-              <div class="titleCard">ANAKIN SKYWALKER</div>
-              <ul class="flex-wrap cardData">
-                <li>Ano de Nascimento</li>
-                <li>Planeta</li>
-                <li>Naves</li>
-                <li>Veículos</li>
-              </ul>
-            </div>
-
-            <!-- BACK CARD  -->
-            <div class="face" id="back">
+            <div class="face back">
               <div class="titleCard">ANAKIN SKYWALKER</div>
               <img src="./assets/starduck.png" alt="starduck" />
             </div>
@@ -178,17 +67,30 @@
     </main>
     <footer>
       <div class="container footer-position">
-        <img src="./assets/footer-logo.png" alt="" />
-        <img src="./assets/Linkedin icon.png" alt="" />
-        <img src="./assets/Instagram icon.png" alt="" />
+        <img src="./assets/footer-logo.png" alt="logotipo_kenzie" />
+
+        <a
+          href="https://www.linkedin.com/school/kenzieacademybr/mycompany/"
+          target="_blank"
+        >
+          <img src="./assets/Linkedin icon.png" alt="logotipo_linkedin" />
+        </a>
+        <a
+          href="https://www.instagram.com/kenzieacademybr/?hl=eny"
+          target="_blank"
+        >
+          <img src="./assets/Instagram icon.png" alt="logotipo_instagram" />
+        </a>
       </div>
     </footer>
 
-    <script src="./scripts/script.js">
-      // const card = document.querySelector("#card");
-      // card.addEventListener("click", (e) => {
-      //   card.classList.toggle("flip");
-      // });
+    <script>
+      const card = document.querySelector(".card");
+      card.addEventListener("click", (e) => {
+        card.classList.toggle("flip");
+      });
     </script>
+
+    <!-- <script src="./scripts/script.js"></script> -->
   </body>
 </html>
